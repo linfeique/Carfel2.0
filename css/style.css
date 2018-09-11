@@ -145,12 +145,6 @@ nav{
     align-items: center;
 }
 
-.risco_pos{
-    width: 60px;
-    height: 8px;
-    background-color: red;
-}
-
 .item_preco{
     height: 52px;
     border-top: 3px solid #8824a4;
@@ -209,11 +203,28 @@ nav{
     text-decoration: none;
 }
 
+.chat{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.chat_int{
+    width: 150px;
+    height: 150px;
+    border: 4px solid #8824a4;
+    border-radius: 75px;
+    margin-right: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
 .rodape{
     width: 100%;
     height: 371px;
     background-color: rgb(39, 38, 38);
-    margin-top: 100px;
+    margin-top: 54px;
 }
 
 .footerzao{

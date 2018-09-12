@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto';
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: #621577;
+}
+
+.container{
+    width: 100%;
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.itens ul{
+    display: flex;
+}
+
+.itens li{
+    list-style: none;
+    padding: 12px;
+    color: white;
+}
+
+.itens a{
+    text-decoration: none;
+    color: black;
+}
+
+.itens li:hover{
+    background-color: white;
+    color: black;
+    transition: all 0.4s;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.quadrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.quadradinho{
+    width: 10px;
+    height: 134px;
+    background-color: #e0e0e0;
+}
+
+.retangulo{
+    width: 846px;
+    height: 134px;
+    background-color: #ececec;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.cont{
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pergunta, .resposta{
+    font-weight: bold;
+    font-size: 13pt;
+    margin-left: 50px;
+}

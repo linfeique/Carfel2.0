@@ -164,3 +164,35 @@ h1{
 .mapinha{
     margin-top: 38px;
 }
+
+@media only screen and (max-width: 1366px){
+    .container{
+        max-width: 1150px;
+    }
+
+    .logo{
+        height: 72px;
+    }
+
+    .bar_item1 {
+        width: 288px;
+        height: 93px;
+    }
+    
+    .bar {
+        width: 1269px;
+    }
+
+    .sobre_img img{
+        width: 550px;
+        height: 400px;
+    }
+
+    .mapinha img{
+        margin-top: -10px;
+    }
+
+    .rodape{
+        height: 340px;
+    }
+}

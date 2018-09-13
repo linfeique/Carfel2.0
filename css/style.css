@@ -56,6 +56,49 @@ nav{
     height: 80px;
 }
 
+.menu_mobile{
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+
+.menu_position{
+    position: absolute;
+    width: 230px;
+    height: 120px;
+    right: 1px;
+    top: 72px;
+    display: none;
+}
+
+.menu_position ul{
+    color: white;
+    background-color: #621577;
+}
+
+.menu_position li{
+    list-style: none;
+    padding: 10px;
+}
+
+.menu_position li:hover{
+    background-color: white;
+    color: #621577;
+    transition: all .5s;
+}
+
+.menu_position a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu_mobile .hamburguinho{
+    height: 4px;
+    background-color: white;
+    margin-top: 7px;
+    border-radius: 10px;
+}
+
 
 .banner{
     background-image: url("../imagens/banner.jpg");
@@ -361,7 +404,7 @@ nav{
     margin-top: 38px;
 }
 
-@media only screen and (max-width: 1366px){
+@media screen and (max-width: 1366px){
     .container{
         max-width: 1150px;
     }
@@ -371,13 +414,14 @@ nav{
     }
 
     .bar_item1 {
-        width: 288px;
-        height: 93px;
+        width: 263px;
+        height: 81px;
     }
-    
-    /* .bar {
-        width: 1269px;
-    } */
+
+    .bar_item2{
+        width: 263px;
+        height: 81px;
+    }
 
     .sobre_img img{
         width: 550px;
@@ -390,5 +434,147 @@ nav{
 
     .rodape{
         height: 340px;
+    }
+
+    .preco_item{
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .container{
+        max-width: 1000px;
+    }
+
+    .bar {
+        width: 1100px;
+
+    }
+
+    .so_pra_barrinha{
+        margin-left: 11px;
+    }
+
+    .so_pra_barrinha ~ .so_pra_barrinha{
+        margin-left: 269px;
+    }
+
+    .so_pra_barrinha2{
+        margin-left: 289px;
+    }
+
+}
+
+@media screen and (max-width: 1167px){
+    .bar {
+        width: 900px;
+    }
+
+    .preco_item {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .quebra_branca{
+        display: none;
+    }
+
+    .mapinha{
+        display: none;
+    }
+
+    .rodape {
+        height: 312px;
+    }
+
+    .middle_footer {
+        margin-top: 49px;
+    }
+
+    .banner{
+        height: 475px;
+    }
+}
+
+@media screen and (max-width: 1120px){
+    .bar{
+        display: none;
+    }
+
+    /* .barrinha{
+        display: none;
+    } */
+
+    .bar_itens{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .so_pra_barrinha{
+        margin: 0px;
+    }
+
+    .so_pra_barrinha2{
+        margin: 0px;
+    }
+
+    .so_pra_barrinha ~ .so_pra_barrinha {
+        margin-left: 0px;
+    }
+
+    /* .bar_item1{
+        margin: 0px;
+        margin-top: 10px;
+    }
+
+    .bar_item2{
+        margin-top: 10px;
+    } */
+
+    .sobre_img img {
+        width: 503px;
+        height: 339px;
+    }
+}
+
+@media screen and (max-width: 990px){
+    .sobre_img img{
+        display: none;
+    }
+
+    .container{
+        max-width: 900px;
+    }
+
+    .menu_mobile{
+        display: unset;
+        cursor: pointer;
+    }
+
+    .itens{
+        display: none;
+    }
+
+    .menu_mobile:hover ~ .menu_position{
+        display: unset;
+    }
+}
+
+@media screen and (max-width: 983px){
+    .precos{
+        flex-direction: column;
+    }
+
+    .preco_item{
+        margin-top: 60px;
+    }
+
+    .button_saiba{
+        display: none;
+    }
+
+    .button_saiba ~ .button_saiba{
+        display: unset;
     }
 }

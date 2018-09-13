@@ -80,6 +80,7 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    color: #5d5959;
 }
 
 .cont{
@@ -101,7 +102,7 @@ h1{
 }
 
 .pergunta, .resposta{
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: 13pt;
     margin-left: 50px;
 }

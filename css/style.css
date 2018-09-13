@@ -243,6 +243,11 @@ nav{
     cursor: pointer;
 }
 
+.button_saiba a{
+    text-decoration: none;
+    color: black;
+}
+
 .sobre_nos{
     margin-top: 180px;
     display: flex;

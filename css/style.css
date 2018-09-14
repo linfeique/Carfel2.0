@@ -11,7 +11,16 @@ body{
     /* background-color: black; */
 }
 
-nav{
+li{
+    list-style: none;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+.menu_desk{
     background-color: #621577;
 }
 
@@ -56,49 +65,52 @@ nav{
     height: 80px;
 }
 
-.menu_mobile{
-    width: 40px;
-    height: 40px;
-    display: none;
-}
-
-.menu_position{
+.unme{
     position: absolute;
-    width: 230px;
-    height: 120px;
-    right: 1px;
-    top: 72px;
+    width: 25%;
+    height: 100vh;
+    top: 0px;
+    right: 0px;
+    background-color: #eee;
     display: none;
 }
 
-.menu_position ul{
-    color: white;
-    background-color: #621577;
+.menu_open{
+    display: unset;
 }
 
-.menu_position li{
-    list-style: none;
-    padding: 10px;
+.btnMenu{
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    text-indent: -9999px;
+    padding: 26.5px 28px;
+    display: block;
+    background-size: 40px;
 }
 
-.menu_position li:hover{
-    background-color: white;
-    color: #621577;
-    transition: all .5s;
+.btnMenu_open{
+    background-image: url(../imagens/menu_branco.svg);
 }
 
-.menu_position a{
-    color: white;
-    text-decoration: none;
+.btnMenu_close{
+    background-color: #8824a4;
+    background-image: url(../imagens/menu_branco.svg);
 }
 
-.menu_mobile .hamburguinho{
-    height: 4px;
-    background-color: white;
-    margin-top: 7px;
-    border-radius: 10px;
+.menu_item{
+    padding: 20px 15px;
+    border-bottom: 1px solid white;
 }
 
+.menu_item_action{
+    color: black;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.menu_mobile{
+    display: none;
+}
 
 .banner{
     background-image: url("../imagens/banner.jpg");
@@ -338,7 +350,7 @@ nav{
     height: 100px;
     border: 4px solid #8824a4;
     border-radius: 75px;
-    margin-right: 60px;
+    margin-right: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -538,6 +550,12 @@ nav{
     }
 }
 
+@media screen and (max-width: 1024px){
+    .container{
+        max-width: 900px;
+    }
+}
+
 @media screen and (max-width: 990px){
     .sobre_img img{
         display: none;
@@ -546,17 +564,12 @@ nav{
     .container{
         max-width: 900px;
     }
-
-    .menu_mobile{
-        display: unset;
-        cursor: pointer;
-    }
-
+    
     .itens{
         display: none;
     }
 
-    .menu_mobile:hover ~ .menu_position{
+    .menu_mobile{
         display: unset;
     }
 }
@@ -576,5 +589,92 @@ nav{
 
     .button_saiba ~ .button_saiba{
         display: unset;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .container{
+        max-width: 500px;;
+    }
+
+    .descript{
+        display: none;
+    }
+
+    .rodape .container{
+        justify-content: center;
+    }
+
+    .function h2 {
+        font-size: 39pt;
+    }
+
+    .title_preco {
+        font-size: 39pt;
+    }
+
+    .precos {
+        margin-top: 28px;
+    }
+
+    h1{
+        font-size: 40pt;
+    }
+
+    .text1{
+        font-size: 11pt;
+    }
+
+    .unme{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 524px){
+    .container{
+        max-width: 430px;;
+    }
+
+    .text1{
+        display: none;
+    }
+
+    .title_preco {
+        font-size: 34pt;
+    }
+
+    .sobre_text h2 {
+        font-size: 26pt;
+        margin-bottom: 33px;
+    }
+
+    .button_sobre{
+        margin-top: 31px;
+    }
+}
+
+@media screen and (max-width: 401px){
+    .container{
+        max-width: 350px;;
+    }
+
+    .function h2 {
+        font-size: 30pt;
+    }
+
+    .title_preco {
+        font-size: 30pt;
+    }
+
+    .sobre_nos {
+        margin-top: 120px;
+    }
+
+    .rodape{
+        margin-top: 24px;
+    }
+
+    .unme{
+        width: 48%;
     }
 }

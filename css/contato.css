@@ -7,6 +7,15 @@
     outline: none;
 }
 
+li{
+    list-style: none;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
 nav{
     background-color: #621577;
 }
@@ -50,6 +59,53 @@ nav{
     display: flex;
     align-items: center;
     height: 80px;
+}
+
+.unme{
+    position: absolute;
+    width: 25%;
+    height: 100vh;
+    top: 0px;
+    right: 0px;
+    background-color: #eee;
+    display: none;
+}
+
+.menu_open{
+    display: unset;
+}
+
+.btnMenu{
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    text-indent: -9999px;
+    padding: 26.5px 28px;
+    display: block;
+    background-size: 40px;
+}
+
+.btnMenu_open{
+    background-image: url(../imagens/menu_branco.svg);
+}
+
+.btnMenu_close{
+    background-color: #8824a4;
+    background-image: url(../imagens/menu_branco.svg);
+}
+
+.menu_item{
+    padding: 20px 15px;
+    border-bottom: 1px solid white;
+}
+
+.menu_item_action{
+    color: black;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.menu_mobile{
+    display: none;
 }
 
 h1{
@@ -214,5 +270,197 @@ h1{
 
     .rodape{
         height: 340px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .container{
+        max-width: 1000px;
+    }
+
+    h1{
+        margin-bottom: 50px;
+    }
+
+}
+
+@media screen and (max-width: 1167px){
+
+    .quebra_branca{
+        display: none;
+    }
+
+    .mapinha{
+        display: none;
+    }
+
+    .rodape {
+        height: 312px;
+    }
+
+    .middle_footer {
+        margin-top: 49px;
+    }
+
+    h1{
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .container{
+        max-width: 900px;
+    }
+}
+
+@media screen and (max-width: 990px){
+    .container{
+        max-width: 900px;
+    }
+    
+    .itens{
+        display: none;
+    }
+
+    .menu_mobile{
+        display: unset;
+    }
+}
+
+@media screen and (max-width: 924px){
+    .container{
+        max-width: 800px;
+    }
+}
+
+@media screen and (max-width: 823px){
+    .container{
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width: 740px){
+    h1 {
+        margin-bottom: 77px;
+    }
+
+    .container{
+        max-width: 700px;
+    }
+
+    .inputs1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inputs1 input{
+        width: 393px;
+        height: 36px;
+    }
+
+    .inputs1 input ~ input{
+        width: 393px;
+        margin-left: 0;
+        margin-top: 7px;
+    } 
+
+    .inputs2{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .inputs2 input{
+        width: 393px;
+        margin-top: 7px;
+    }
+
+    .inputs3{
+        display: flex;
+        justify-content: center;
+    }
+
+    .inputs3 input{
+        width: 196.5px;
+        margin-top: 7px;
+    }
+
+    .inputs3 input ~ input{
+        width: 195.5px;
+        margin-left: 0px;
+    }
+
+    .inputs4 textarea{
+        width: 393px;
+        height: 108px;
+        margin-top: 7px;
+    }
+}
+
+@media screen and (max-width: 720px){
+    .container{
+        max-width: 650px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .formulario{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .formulario{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 675px){
+    .container{
+        max-width: 570px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .container{
+        max-width: 500px;;
+    }
+
+    .descript{
+        display: none;
+    }
+
+    .rodape .container{
+        justify-content: center;
+    }
+
+    .unme{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 524px){
+    .container{
+        max-width: 430px;;
+    }
+}
+
+@media screen and (max-width: 401px){
+    .container{
+        max-width: 350px;;
+    }
+
+    .footerzao{
+        margin-top: 56px;
+    }
+
+    .rodape{
+        margin-top: 24px;
+    }
+
+    .unme{
+        width: 48%;
     }
 }

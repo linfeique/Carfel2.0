@@ -9,7 +9,7 @@
     <script src="../js/faq.js"></script>
 </head>
 <body>
-    <nav>
+    <nav class="menu_desk">
         <div class="menu">
             <div class="container">
                 <div class="logo">
@@ -31,6 +31,24 @@
                         </a>
                     </ul>
                 </div>
+                <nav class="menu_mobile">
+                    <a href="#menu" class="btnMenu btnMenu_open">Menu</a>
+                    <ul class="unme" id="menu">
+                        <li class="btnMenu btnMenu_close">Sair</li>
+                        <li class="menu_item">
+                            <a href="../index.html" class="menu_item_action">home</a>
+                        </li>
+                        <li class="menu_item">
+                            <a href="contatos.html" class="menu_item_action">contatos</a>
+                        </li>
+                        <li class="menu_item">
+                            <a href="faq.html" class="menu_item_action">faq</a>
+                        </li>
+                        <li class="menu_item">
+                            <a href="sobre.html" class="menu_item_action">sobre a empresa</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </nav>
@@ -131,5 +149,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="../js/main.js"></script>
 </body>
 </html>
